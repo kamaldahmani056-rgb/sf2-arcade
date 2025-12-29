@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>SF2 Arcade</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <!-- Game Screen -->
+    <div id="gameScreen">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Touch Controls -->
+    <div id="controls">
+        <!-- D-Pad -->
+        <div class="dpad">
+            <button class="btn-dir btn-up" data-dir="up">▲</button>
+            <button class="btn-dir btn-left" data-dir="left">◀</button>
+            <button class="btn-dir btn-right" data-dir="right">▶</button>
+            <button class="btn-dir btn-down" data-dir="down">▼</button>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-btns">
+            <div class="btn-row">
+                <button class="btn-action btn-lp" data-btn="lp">LP</button>
+                <button class="btn-action btn-mp" data-btn="mp">MP</button>
+                <button class="btn-action btn-hp" data-btn="hp">HP</button>
+            </div>
+            <div class="btn-row">
+                <button class="btn-action btn-lk" data-btn="lk">LK</button>
+                <button class="btn-action btn-mk" data-btn="mk">MK</button>
+                <button class="btn-action btn-hk" data-btn="hk">HK</button>
+            </div>
+        </div>
+
+        <!-- System Buttons -->
+        <div class="sys-btns">
+            <button class="btn-sys btn-coin" data-btn="coin">COIN</button>
+            <button class="btn-sys btn-start" data-btn="start">START</button>
+        </div>
+    </div>
+
+    <!-- Menu Button -->
+    <button id="menuBtn">☰</button>
+
+    <!-- Pause Menu -->
+    <div id="pauseMenu" class="hidden">
+        <div class="menu-box">
+            <h2>إيقاف مؤقت</h2>
+            <button onclick="resumeGame()">استئناف</button>
+            <button onclick="Android.exitGame()">خروج</button>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

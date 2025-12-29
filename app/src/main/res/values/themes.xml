@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SF2Arcade" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF6600</item>
+        <item name="colorPrimaryDark">#CC5200</item>
+        <item name="colorAccent">#FF6600</item>
+        <item name="android:windowBackground">#000000</item>
+    </style>
+
+    <style name="Theme.SF2Arcade.Fullscreen" parent="Theme.SF2Arcade">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>
